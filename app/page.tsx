@@ -91,7 +91,7 @@ export default function Home() {
           <StatsCard title="Dalhousie Society Members" value="90+" />
           <StatsCard title="Community Members" value="1,000+" />
           <StatsCard title="Governance Proposals" value="50+" />
-          <StatsCard title="University Partners (incl. Waterloo Blockchain, Columbia Blockchain, etc" value="5+" />
+          <StatsCard title="University Partners (incl. Waterloo Blockchain, Columbia Blockchain, etc)" value="5+" />
         </div>
       </section>
 
