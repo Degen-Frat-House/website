@@ -23,7 +23,7 @@ export function Navbar() {
         <Link href="/" className="flex items-center space-x-2">
           <div className="flex items-center gap-2">
             <Image
-              src="/dbs-logo.png"
+              src="/dal-bcs.png"
               alt="Dalhousie Blockchain Society"
               width={32}
               height={32}
