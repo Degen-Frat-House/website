@@ -24,7 +24,7 @@ export function Navbar() {
           <div className="flex items-center gap-2">
             <Image
               src="/logo.jpeg"
-              alt="Dalhousie Blockchain Society"
+              alt="Degen Frat House"
               width={32}
               height={32}
             />

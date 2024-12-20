@@ -153,8 +153,8 @@ export default function Home() {
                 <span className="font-bold">Q2</span>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Education Platform</h3>
-                <p className="text-muted-foreground">Release exclusive educational content and resources</p>
+                <h3 className="text-xl font-semibold mb-2">Governance</h3>
+                <p className="text-muted-foreground">Establishing a governance structure and pushing community proposals</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -162,8 +162,8 @@ export default function Home() {
                 <span className="font-bold">Q3</span>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Partnership Expansion</h3>
-                <p className="text-muted-foreground">Establish partnerships with other universities and DAOs</p>
+                <h3 className="text-xl font-semibold mb-2">Value Creation</h3>
+                <p className="text-muted-foreground">Create an NFT collection for the core community, create token gated applications for holders, exclusive education and partnerships</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -171,8 +171,8 @@ export default function Home() {
                 <span className="font-bold">Q4</span>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Global Scaling</h3>
-                <p className="text-muted-foreground">Expand to international markets and launch innovative DeFi products</p>
+                <h3 className="text-xl font-semibold mb-2">Massive Scaling</h3>
+                <p className="text-muted-foreground">Expand and launch innovative products</p>
               </div>
             </div>
           </div>
