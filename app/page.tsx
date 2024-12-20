@@ -1,101 +1,306 @@
-import Image from "next/image";
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { FeatureCard } from "@/components/feature-card"
+import { StatsCard } from "@/components/stats-cards"
+import { Users, Vote, Blocks, Rocket, ArrowRight } from 'lucide-react'
+import Image from "next/image"
+import Link from "next/link"
+import { memes } from "@/data/memes"
+
+const partnerships = [
+  {
+    name: "Late Capitalism DAO",
+    logo: "/lateLogo.jpeg",
+    description: "Investment DAO of the LATE Movement. We invest in intersubjective culture coins. 1000X is FUD. Join the memetic revolution, add zeros."
+  },
+  {
+    name: "Yahtzee DAO",
+    logo: "/yatzeeLogo.jpeg",
+    description: "The AI VC for Yahtzees, managed by AIrthur Hayes. With recommendations from our fellow Yahtzees."
+  },
+  {
+    name: "TopKek DAO",
+    logo: "/topkekLogo.png",
+    description: "We aim to invest mainly into established memecoins at fair pricing. We will also act as a FoF (Fund of Funds) and invest in other DAOs that have a great portfolio that we believe will perform well, and we want exposure to the underlying assets. KEK!!"
+  },
+  {
+    name: "3MC DAO",
+    logo: "/3mcLogo.jpeg",
+    description: "frens get liquidated together."
+  },
+  {
+    name: "Inferno DAO",
+    logo: "/infernoDAO.jpeg",
+    description: "Inferno DAO focuses on trading on demand narratives in Solana ecosystem to maximize the potential profit and lessen the risk involve. We are money maxi, we follow where the smart money at."
+  },
+  {
+    name: "Elon Meme Fund DAO",
+    logo: "/emfLogo.jpeg",
+    description: "Elon Meme Fund is the first AI Agent powered VC fund that invests in memes tweeted by Elon Musk."
+  }
+]
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <div className="flex flex-col">
+      {/* Hero Section */}
+      <section className="relative overflow-hidden border-b">
+        <div className="container flex min-h-screen flex-col items-center justify-center gap-4 text-center">
+          <div className="flex items-center gap-4 mb-8">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/dal-bcs.png"
+              alt="Dalhousie Blockchain Society"
+              width={60}
+              height={60}
+              className="animate-float"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <span className="text-xl font-semibold">×</span>
+            <Image
+              src="/logo.jpeg"
+              alt="Degen Frat House"
+              width={60}
+              height={60}
+              className="animate-float"
+              style={{ animationDelay: "0.5s" }}
+            />
+          </div>
+          <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl gradient-text mb-4">
+            Degen Frat House DAO
+          </h1>
+          <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8 mb-8">
+            The first university-backed DAO, revolutionizing blockchain education and community governance.
+            Created by the Dalhousie Blockchain Society.
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+              <Link href="https://www.daos.fun/G9erv7NPcnC9LYHHua8kRVrV1Hm2dvvGzssuw1zC9Ddq" className="flex items-center gap-2">
+                Join the DAO <ArrowRight className="w-4 h-4" />
+              </Link>
+            </Button>
+            <Button size="lg" variant="outline" asChild>
+              <Link href="https://t.me/degenfrathouse">Join Community</Link>
+            </Button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#000000_1px,transparent_1px),linear-gradient(to_bottom,#000000_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] opacity-10"></div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-20 container">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <StatsCard title="Dalhousie Society Members" value="90+" />
+          <StatsCard title="Community Members" value="1,000+" />
+          <StatsCard title="Governance Proposals" value="50+" />
+          <StatsCard title="University Partners (incl. Waterloo Blockchain, Columbia Blockchain, etc" value="5+" />
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-20 bg-secondary/50">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Why Join Degen Frat House?</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Experience the future of decentralized education and community governance
+            </p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <FeatureCard
+              icon={<Users className="h-8 w-8" />}
+              title="Community Driven"
+              description="Join a vibrant community of students and blockchain enthusiasts"
+            />
+            <FeatureCard
+              icon={<Vote className="h-8 w-8" />}
+              title="Governance"
+              description="Every holder has a voice in determining the future of the DAO"
+            />
+            <FeatureCard
+              icon={<Blocks className="h-8 w-8" />}
+              title="Education First"
+              description="Access exclusive blockchain education and resources"
+            />
+            <FeatureCard
+              icon={<Rocket className="h-8 w-8" />}
+              title="Innovation"
+              description="Be part of groundbreaking Web3 initiatives"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Roadmap Section */}
+      <section className="py-20 container">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold mb-4">Our Roadmap</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Building the future of decentralized education
+          </p>
+        </div>
+        <div className="max-w-3xl mx-auto">
+          <div className="space-y-8">
+            <div className="flex gap-4">
+              <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center shrink-0">
+                <span className="font-bold">Q1</span>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Community Building</h3>
+                <p className="text-muted-foreground">Launch DAO governance structure and initial token distribution</p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="w-12 h-12 rounded-full bg-primary/80 flex items-center justify-center shrink-0">
+                <span className="font-bold">Q2</span>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Education Platform</h3>
+                <p className="text-muted-foreground">Release exclusive educational content and resources</p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="w-12 h-12 rounded-full bg-primary/60 flex items-center justify-center shrink-0">
+                <span className="font-bold">Q3</span>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Partnership Expansion</h3>
+                <p className="text-muted-foreground">Establish partnerships with other universities and DAOs</p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="w-12 h-12 rounded-full bg-primary/40 flex items-center justify-center shrink-0">
+                <span className="font-bold">Q4</span>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Global Scaling</h3>
+                <p className="text-muted-foreground">Expand to international markets and launch innovative DeFi products</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Partnerships Section */}
+      <section className="py-20 container">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold mb-4">Our Partners</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Working with industry leaders to drive innovation in blockchain
+          </p>
+        </div>
+        <div className="grid gap-8 md:grid-cols-3">
+          {partnerships.map((partner) => (
+            <Card key={partner.name} className="group hover:border-primary/50 transition-colors">
+              <CardContent className="p-6 flex flex-col items-center text-center">
+                <Image
+                  src={partner.logo}
+                  alt={partner.name}
+                  width={80}
+                  height={80}
+                  className="mb-4 group-hover:scale-110 transition-transform"
+                />
+                <h3 className="text-xl font-semibold mb-2">{partner.name}</h3>
+                <p className="text-muted-foreground">{partner.description}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      {/* Memes Section */}
+      <section id="memes" className="py-20 bg-secondary/50">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Community Highlights</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              The best memes and moments from our vibrant community
+            </p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {memes.map((meme) => (
+              <Card key={meme.id} className="group overflow-hidden bg-card hover:border-primary/50 transition-colors">
+                <CardContent className="p-0">
+                  <div className="relative aspect-video">
+                    <Image
+                      src={meme.src}
+                      alt={meme.title}
+                      fill
+                      className="object-cover transition-transform group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="font-medium">{meme.title}</h3>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Social Feed Section */}
+      <section className="py-20 container">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold mb-4">Latest Updates</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Stay connected with our community
+          </p>
+        </div>
+        <div className="grid gap-8 md:grid-cols-2">
+          <Card className="overflow-hidden">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-4">Twitter Feed</h3>
+              <div className="aspect-[4/5] bg-card">
+                <div id="twitter-feed" className="h-full">
+                  <a 
+                    className="twitter-timeline" 
+                    data-theme="dark"
+                    data-chrome="transparent nofooter noborders"
+                    href="https://twitter.com/degenfrat?ref_src=twsrc%5Etfw"
+                  >
+                    Tweets by degenfrat
+                  </a>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+          <Card className="overflow-hidden">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-4">Telegram Community</h3>
+              <div className="aspect-[4/5] bg-card flex flex-col items-center justify-center text-center p-6">
+                <p className="text-muted-foreground mb-6">
+                  Join our active Telegram community to stay updated and connect with other members
+                </p>
+                <Button size="lg" variant="outline" asChild>
+                  <Link href="https://t.me/degenfrathouse" className="flex items-center gap-2">
+                    Join Telegram <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-secondary/50">
+        <div className="container text-center">
+          <h2 className="text-3xl font-bold mb-4">Ready to Join?</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
+            Be part of the first university-backed DAO and help shape the future of blockchain education
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+              <Link href="https://www.daos.fun/G9erv7NPcnC9LYHHua8kRVrV1Hm2dvvGzssuw1zC9Ddq" className="flex items-center gap-2">
+                Join Now <ArrowRight className="w-4 h-4" />
+              </Link>
+            </Button>
+            <Button size="lg" variant="outline" asChild>
+              <Link href="https://t.me/degenfrathouse">Join Telegram</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
     </div>
-  );
+  )
 }
+
