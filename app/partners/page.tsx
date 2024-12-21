@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { ArrowRight, ExternalLink, Globe, Users, Zap, TrendingUp, Award } from 'lucide-react'
+import { ArrowRight, ExternalLink, Globe, Users, Zap, TrendingUp } from 'lucide-react'
 import Link from "next/link"
 import Image from "next/image"
 import { useState } from 'react'
@@ -312,7 +312,7 @@ const PartnershipValueProps = [
             Collaborating with industry leaders to drive innovation in blockchain and decentralized finance
           </motion.p>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 auto-rows-[600px]">
-            {partnerships.map((partner, index) => (
+            {partnerships.map((partner) => (
               <PartnerCard key={partner.name} partner={partner} />
             ))}
           </div>

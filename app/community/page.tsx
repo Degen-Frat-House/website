@@ -5,9 +5,8 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { ArrowRight, Twitter, MessageCircle, Users, Award, Zap, Globe, Send, ChevronRight } from 'lucide-react'
+import { ArrowRight, Twitter, MessageCircle, Users, Award, Zap, Globe, Send } from 'lucide-react'
 import Link from "next/link"
-import Image from "next/image"
 import { useState } from 'react'
 
 const communityStats = [
@@ -96,7 +95,7 @@ const TestimonialCard = ({ name, role, quote }: { name: string, role: string, qu
           <p className="text-sm text-muted-foreground">{role}</p>
         </div>
       </div>
-      <p className="italic text-muted-foreground">"{quote}"</p>
+      <p className="italic text-muted-foreground">{quote}</p>
     </CardContent>
   </Card>
 )

@@ -5,7 +5,6 @@ import { Users, Vote, Blocks, Rocket, ArrowRight, Zap, Shield, Globe, Coins } fr
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
-import Image from "next/image"
 
 const features = [
   {
