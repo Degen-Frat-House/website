@@ -81,7 +81,7 @@ const roadmapItems: RoadmapItem[] = [
   },
   {
     quarter: "Q3",
-    year: "2024",
+    year: "2025",
     title: "Innovation Incubator",
     description: "Launch an incubator program to foster innovative blockchain projects within the community.",
     icon: <Zap className="w-10 h-10" />,
