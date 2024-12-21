@@ -44,8 +44,20 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative overflow-hidden border-b">
-        <div className="container flex min-h-screen flex-col items-center justify-center gap-4 text-center">
+      <section className="relative min-h-screen w-full">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/hero-bg.jpeg"
+            alt="Background"
+            fill
+            className="object-cover"
+            priority
+            quality={100}
+          />
+          <div className="absolute inset-0 bg-black/70" /> {/* Darker overlay */}
+        </div>
+        <div className="relative z-10 container flex min-h-screen flex-col items-center justify-center gap-4 text-center">
           <div className="flex items-center gap-4 mb-8">
             <Image
               src="/dal-bcs.png"
