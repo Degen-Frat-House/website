@@ -86,18 +86,20 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 container">
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-          <StatsCard title="Dalhousie Society Members" value="90+" />
-          <StatsCard title="Community Members" value="1,000+" />
-          <StatsCard title="Governance Proposals" value="50+" />
-          <StatsCard title="University Partners (incl. Waterloo Blockchain, Columbia Blockchain, etc)" value="5+" />
+      <section className="py-20">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+            <StatsCard title="Dalhousie Society Members" value="90+" />
+            <StatsCard title="Community Members" value="1,000+" />
+            <StatsCard title="Governance Proposals" value="50+" />
+            <StatsCard title="University Partners (incl. Waterloo Blockchain, Columbia Blockchain, etc)" value="5+" />
+          </div>
         </div>
       </section>
 
       {/* Features Section */}
       <section className="py-20 bg-secondary/50">
-        <div className="container">
+        <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Why Join Degen Frat House?</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -130,49 +132,51 @@ export default function Home() {
       </section>
 
       {/* Roadmap Section */}
-      <section className="py-20 container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Our Roadmap</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Building the future of decentralized education
-          </p>
-        </div>
-        <div className="max-w-3xl mx-auto">
-          <div className="space-y-8">
-            <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center shrink-0">
-                <span className="font-bold">Q1</span>
+      <section className="py-20">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Our Roadmap</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Building the future of decentralized education
+            </p>
+          </div>
+          <div className="max-w-3xl mx-auto">
+            <div className="space-y-8">
+              <div className="flex gap-4">
+                <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center shrink-0">
+                  <span className="font-bold">Q1</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Community Building</h3>
+                  <p className="text-muted-foreground">Launch DAO governance structure and initial token distribution</p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Community Building</h3>
-                <p className="text-muted-foreground">Launch DAO governance structure and initial token distribution</p>
+              <div className="flex gap-4">
+                <div className="w-12 h-12 rounded-full bg-primary/80 flex items-center justify-center shrink-0">
+                  <span className="font-bold">Q2</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Governance</h3>
+                  <p className="text-muted-foreground">Establishing a governance structure and pushing community proposals</p>
+                </div>
               </div>
-            </div>
-            <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-full bg-primary/80 flex items-center justify-center shrink-0">
-                <span className="font-bold">Q2</span>
+              <div className="flex gap-4">
+                <div className="w-12 h-12 rounded-full bg-primary/60 flex items-center justify-center shrink-0">
+                  <span className="font-bold">Q3</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Value Creation</h3>
+                  <p className="text-muted-foreground">Create an NFT collection for the core community, create token gated applications for holders, exclusive education and partnerships</p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Governance</h3>
-                <p className="text-muted-foreground">Establishing a governance structure and pushing community proposals</p>
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-full bg-primary/60 flex items-center justify-center shrink-0">
-                <span className="font-bold">Q3</span>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Value Creation</h3>
-                <p className="text-muted-foreground">Create an NFT collection for the core community, create token gated applications for holders, exclusive education and partnerships</p>
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-full bg-primary/40 flex items-center justify-center shrink-0">
-                <span className="font-bold">Q4</span>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Massive Scaling</h3>
-                <p className="text-muted-foreground">Expand and launch innovative products</p>
+              <div className="flex gap-4">
+                <div className="w-12 h-12 rounded-full bg-primary/40 flex items-center justify-center shrink-0">
+                  <span className="font-bold">Q4</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Massive Scaling</h3>
+                  <p className="text-muted-foreground">Expand and launch innovative products</p>
+                </div>
               </div>
             </div>
           </div>
@@ -180,35 +184,37 @@ export default function Home() {
       </section>
 
       {/* Partnerships Section */}
-      <section className="py-20 container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Our Partners</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Working with industry leaders to drive innovation in blockchain
-          </p>
-        </div>
-        <div className="grid gap-8 md:grid-cols-3">
-          {partnerships.map((partner) => (
-            <Card key={partner.name} className="group hover:border-primary/50 transition-colors">
-              <CardContent className="p-6 flex flex-col items-center text-center">
-                <Image
-                  src={partner.logo}
-                  alt={partner.name}
-                  width={80}
-                  height={80}
-                  className="mb-4 group-hover:scale-110 transition-transform"
-                />
-                <h3 className="text-xl font-semibold mb-2">{partner.name}</h3>
-                <p className="text-muted-foreground">{partner.description}</p>
-              </CardContent>
-            </Card>
-          ))}
+      <section className="py-20">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Our Partners</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Working with industry leaders to drive innovation in blockchain
+            </p>
+          </div>
+          <div className="grid gap-8 md:grid-cols-3">
+            {partnerships.map((partner) => (
+              <Card key={partner.name} className="group hover:border-primary/50 transition-colors">
+                <CardContent className="p-6 flex flex-col items-center text-center">
+                  <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    width={80}
+                    height={80}
+                    className="mb-4 group-hover:scale-110 transition-transform"
+                  />
+                  <h3 className="text-xl font-semibold mb-2">{partner.name}</h3>
+                  <p className="text-muted-foreground">{partner.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Memes Section */}
       <section id="memes" className="py-20 bg-secondary/50">
-        <div className="container">
+        <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Community Highlights</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -238,52 +244,54 @@ export default function Home() {
       </section>
 
       {/* Social Feed Section */}
-      <section className="py-20 container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Latest Updates</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Stay connected with our community
-          </p>
-        </div>
-        <div className="grid gap-8 md:grid-cols-2">
-          <Card className="overflow-hidden">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-4">Twitter Feed</h3>
-              <div className="aspect-[4/5] bg-card">
-                <div id="twitter-feed" className="h-full">
-                  <a 
-                    className="twitter-timeline" 
-                    data-theme="dark"
-                    data-chrome="transparent nofooter noborders"
-                    href="https://twitter.com/degenfrat?ref_src=twsrc%5Etfw"
-                  >
-                    Tweets by degenfrat
-                  </a>
+      <section className="py-20">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Latest Updates</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Stay connected with our community
+            </p>
+          </div>
+          <div className="grid gap-8 md:grid-cols-2">
+            <Card className="overflow-hidden">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-semibold mb-4">Twitter Feed</h3>
+                <div className="aspect-[4/5] bg-card">
+                  <div id="twitter-feed" className="h-full">
+                    <a 
+                      className="twitter-timeline" 
+                      data-theme="dark"
+                      data-chrome="transparent nofooter noborders"
+                      href="https://twitter.com/degenfrat?ref_src=twsrc%5Etfw"
+                    >
+                      Tweets by degenfrat
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
-          <Card className="overflow-hidden">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-4">Telegram Community</h3>
-              <div className="aspect-[4/5] bg-card flex flex-col items-center justify-center text-center p-6">
-                <p className="text-muted-foreground mb-6">
-                  Join our active Telegram community to stay updated and connect with other members
-                </p>
-                <Button size="lg" variant="outline" asChild>
-                  <Link href="https://t.me/degenfrathouse" className="flex items-center gap-2">
-                    Join Telegram <ArrowRight className="w-4 h-4" />
-                  </Link>
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+            <Card className="overflow-hidden">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-semibold mb-4">Telegram Community</h3>
+                <div className="aspect-[4/5] bg-card flex flex-col items-center justify-center text-center p-6">
+                  <p className="text-muted-foreground mb-6">
+                    Join our active Telegram community to stay updated and connect with other members
+                  </p>
+                  <Button size="lg" variant="outline" asChild>
+                    <Link href="https://t.me/degenfrathouse" className="flex items-center gap-2">
+                      Join Telegram <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-secondary/50">
-        <div className="container text-center">
+        <div className="container mx-auto px-4 max-w-7xl text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Join?</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
             Be part of the first university-backed DAO and help shape the future of blockchain education
