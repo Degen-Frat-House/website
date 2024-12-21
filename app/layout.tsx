@@ -12,7 +12,7 @@ export const metadata = {
   description: 'The first university-backed DAO, revolutionizing blockchain education and community governance.',
   icons: {
     icon: '/degenLogo.png',
-    apple: '/degenLogo.png',
+    apple: '/apple-touch-icon.png',
   },
 }
 
