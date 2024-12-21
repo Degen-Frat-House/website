@@ -37,6 +37,11 @@ const partnerships = [
     name: "Elon Meme Fund DAO",
     logo: "/emfLogo.jpeg",
     description: "Elon Meme Fund is the first AI Agent powered VC fund that invests in memes tweeted by Elon Musk."
+  },
+  {
+    name: "sAIm Altman - DAO",
+    logo: "/closedAI.png",
+    description: "sAIm altman ($CLOSED) is a DAO parodying Sam Altman. It deploys a trading/sniper Telegram bot to facilitate automated investing and sniping on daos.fun for its users, humorously mimicking Altman's AI investment approach in the DAO space."
   }
 ]
 
@@ -48,7 +53,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/hero-bg.jpeg"
+            src="/banner-degenfrat.jpg"
             alt="Background"
             fill
             className="object-cover"
@@ -90,7 +95,7 @@ export default function Home() {
               </Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <Link href="https://t.me/degenfrathouse">Join Community</Link>
+              <Link href="https://t.me/+rqjxWMZWtG8yNzdh">Join Community</Link>
             </Button>
           </div>
         </div>
@@ -103,7 +108,7 @@ export default function Home() {
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             <StatsCard title="Dalhousie Society Members" value="90+" />
             <StatsCard title="Community Members" value="1,000+" />
-            <StatsCard title="Governance Proposals" value="50+" />
+            <StatsCard title="Governance Proposals" value="Coming Soon" />
             <StatsCard title="University Partners (incl. Waterloo Blockchain, Columbia Blockchain, etc)" value="5+" />
           </div>
         </div>
@@ -115,7 +120,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Why Join Degen Frat House?</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Experience the future of decentralized education and community governance
+              Experience the future of decentralized education and community governance. A DAO ran like how it should be.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -290,7 +295,7 @@ export default function Home() {
                     Join our active Telegram community to stay updated and connect with other members
                   </p>
                   <Button size="lg" variant="outline" asChild>
-                    <Link href="https://t.me/degenfrathouse" className="flex items-center gap-2">
+                    <Link href="https://t.me/+rqjxWMZWtG8yNzdh" className="flex items-center gap-2">
                       Join Telegram <ArrowRight className="w-4 h-4" />
                     </Link>
                   </Button>
@@ -315,7 +320,7 @@ export default function Home() {
               </Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <Link href="https://t.me/degenfrathouse">Join Telegram</Link>
+              <Link href="https://t.me/+rqjxWMZWtG8yNzdh">Join Telegram</Link>
             </Button>
           </div>
         </div>
