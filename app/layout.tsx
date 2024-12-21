@@ -3,6 +3,7 @@ import './globals.css'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import Script from 'next/script'
+import { WalletProvider } from '@/contexts/wallet-context'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,11 +24,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={inter.className}>
-        <div className="min-h-screen bg-background">
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
-        </div>
+        <WalletProvider>
+          <div className="min-h-screen bg-background">
+            <Navbar />
+            <main>{children}</main>
+            <Footer />
+          </div>
+        </WalletProvider>
         <Script async src="https://platform.twitter.com/widgets.js" />
       </body>
     </html>

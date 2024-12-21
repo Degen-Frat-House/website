@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import { WalletButton } from "@/components/wallet-button"
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
@@ -47,6 +48,7 @@ export function Navbar() {
               Partners
             </Link>
           </div>
+          <WalletButton />
           <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
             <Link href="https://www.daos.fun/G9erv7NPcnC9LYHHua8kRVrV1Hm2dvvGzssuw1zC9Ddq">
               Join DAO
