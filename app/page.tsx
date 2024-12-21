@@ -53,7 +53,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/banner-degenfrat.jpg"
+            src="/roadmap-bg.jpg"
             alt="Background"
             fill
             className="object-cover"

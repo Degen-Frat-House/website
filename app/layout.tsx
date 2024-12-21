@@ -11,8 +11,8 @@ export const metadata = {
   title: 'Degen Frat House DAO | Powered by Dalhousie Blockchain Society',
   description: 'The first university-backed DAO, revolutionizing blockchain education and community governance.',
   icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    icon: '/degenLogo.png',
+    apple: '/degenLogo.png',
   },
 }
 
