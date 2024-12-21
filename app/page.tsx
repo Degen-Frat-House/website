@@ -49,7 +49,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative min-h-screen w-full">
+      <section className="relative min-h-screen w-full flex items-center justify-center">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
@@ -62,26 +62,26 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-black/70" /> {/* Darker overlay */}
         </div>
-        <div className="relative z-10 container flex min-h-screen flex-col items-center justify-center gap-4 text-center">
-          <div className="flex items-center gap-4 mb-8">
+        <div className="relative z-10 container mx-auto flex flex-col items-center justify-center text-center px-4">
+          <div className="flex items-center justify-center gap-8 mb-12">
             <Image
               src="/dal-bcs.png"
               alt="Dalhousie Blockchain Society"
-              width={60}
-              height={60}
+              width={250}
+              height={250}
               className="animate-float"
             />
             <span className="text-xl font-semibold">×</span>
             <Image
-              src="/logo.jpeg"
+              src="/degenLogo.png"
               alt="Degen Frat House"
-              width={60}
-              height={60}
+              width={250}
+              height={250}
               className="animate-float"
               style={{ animationDelay: "0.5s" }}
             />
           </div>
-          <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl gradient-text mb-4">
+          <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl gradient-text mb-4 items-center justify-center text-center">
             Degen Frat House DAO
           </h1>
           <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8 mb-8">
