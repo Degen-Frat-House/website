@@ -21,16 +21,6 @@ const partnerships = [
     collaborations: ["Joint research on meme economics", "Cross-DAO governance experiments"]
   },
   {
-    name: "Yahtzee DAO",
-    logo: "/yatzeeLogo.jpeg",
-    description: "The AI VC for Yahtzees, managed by AIrthur Hayes. With recommendations from our fellow Yahtzees.",
-    website: "https://www.daos.fun/6hUC9DN73kdinkth3JdELGYnEbLEnEE4NvbzzoG3yPKK",
-    members: "4,000+",
-    tvl: "$3M+",
-    keyProjects: ["Decentralized Prediction Markets", "Meme Coin Analysis"],
-    collaborations: ["Cross-chain interoperability research", "Joint trading initiatives"]
-  },
-  {
     name: "TopKek DAO",
     logo: "/topkekLogo.png",
     description: "We aim to invest mainly into established memecoins at fair pricing. We will also act as a FoF (Fund of Funds) and invest in other DAOs that have a great portfolio that we believe will perform well, and we want exposure to the underlying assets. KEK!!",

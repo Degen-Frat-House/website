@@ -14,11 +14,6 @@ const partnerships = [
     description: "Investment DAO of the LATE Movement. We invest in intersubjective culture coins. 1000X is FUD. Join the memetic revolution, add zeros."
   },
   {
-    name: "Yahtzee DAO",
-    logo: "/yatzeeLogo.jpeg",
-    description: "The AI VC for Yahtzees, managed by AIrthur Hayes. With recommendations from our fellow Yahtzees."
-  },
-  {
     name: "TopKek DAO",
     logo: "/topkekLogo.png",
     description: "We aim to invest mainly into established memecoins at fair pricing. We will also act as a FoF (Fund of Funds) and invest in other DAOs that have a great portfolio that we believe will perform well, and we want exposure to the underlying assets. KEK!!"
