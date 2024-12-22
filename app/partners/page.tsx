@@ -41,16 +41,6 @@ const partnerships = [
     collaborations: ["Marketing", "Meme Competitions", "Community Voting"]
   },
   {
-    name: "Inferno DAO",
-    logo: "/infernoDAO.jpeg",
-    description: "Inferno DAO focuses on trading on demand narratives in Solana ecosystem to maximize the potential profit and lessen the risk involve. We are money maxi, we follow where the smart money at.",
-    website: "https://infernodao.xyz/",
-    members: "2,500+",
-    tvl: "$150k+",
-    keyProjects: ["Narrative Detection", "Risk Management", "Profit Maximizing"],
-    collaborations: ["Meme Competitions", "Community Voting", "Ecosystem growth initiatives"]
-  },
-  {
     name: "Elon Meme Fund DAO",
     logo: "/emfLogo.jpeg",
     description: "Elon Meme Fund is the first AI Agent powered VC fund that invests in memes tweeted by Elon Musk.",

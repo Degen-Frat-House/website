@@ -24,11 +24,6 @@ const partnerships = [
     description: "frens get liquidated together."
   },
   {
-    name: "Inferno DAO",
-    logo: "/infernoDAO.jpeg",
-    description: "Inferno DAO focuses on trading on demand narratives in Solana ecosystem to maximize the potential profit and lessen the risk involve. We are money maxi, we follow where the smart money at."
-  },
-  {
     name: "Elon Meme Fund DAO",
     logo: "/emfLogo.jpeg",
     description: "Elon Meme Fund is the first AI Agent powered VC fund that invests in memes tweeted by Elon Musk."
